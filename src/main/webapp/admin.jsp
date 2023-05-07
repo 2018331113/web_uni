@@ -31,15 +31,20 @@
 
 <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
     <div class="px-4 py-6 sm:px-0">
-        <h1 class="text-2xl font-semibold text-gray-900">Registered Courses</h1>
+      <div class="flex items-center justify-between">
+        <h1 class="text-2xl font-semibold text-gray-900">All Courses</h1>
+        <a href="create_course" class="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">Add new course</a>
+</div>
+      </div>
         <div class="my-4">
             <div class="grid grid-cols-3 gap-x-8 gap-y-8">
-                <c:forEach var="course" items="${registeredCourses}">
+                <c:forEach var="course" items="${Courses}">
                   
                     <a href="course?courseCode=${course.courseCode}">
                 		<div class="bg-white rounded-lg shadow-md p-4 relative course-item">
 	                    	<div class="text-lg font-medium text-gray-900">${course.courseName}</div>
 	                        <div class="text-md font-medium text-gray-500">${course.courseCode}</div>
+	                        <div class="text-md font-medium text-gray-500">${course.instructor}</div>
 	                        <div class="text-md text-gray-500">${course.noOfStudents} Students</div>
                     	</div>
 					</a>

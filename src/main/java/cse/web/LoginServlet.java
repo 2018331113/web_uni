@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         if (email.equals(USERNAME) && password.equals(PASSWORD)) {
-        	 	response.sendRedirect("teacher");
+        	 	response.sendRedirect("admin");
         	   
         } else {
             out.println("<h1>Invalid credentials. Please try again.</h1>");

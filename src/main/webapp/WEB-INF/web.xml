@@ -30,4 +30,29 @@
     <servlet-name>TeacherServlet</servlet-name>
     <url-pattern>/teacher</url-pattern>
 </servlet-mapping>
+<servlet>
+    <servlet-name>CourseServlet</servlet-name>
+    <servlet-class>cse.web.CourseServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CourseServlet</servlet-name>
+    <url-pattern>/course</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>cse.web.AdminServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>CreateCourseServlet</servlet-name>
+    <servlet-class>cse.web.CreateCourseServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CreateCourseServlet</servlet-name>
+    <url-pattern>/create_course</url-pattern>
+</servlet-mapping>
+
 </web-app>
